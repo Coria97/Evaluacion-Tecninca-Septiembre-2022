@@ -1,0 +1,25 @@
+1) El primer error que encontramos seria convertir todo en mayusculas ya que al hacer esto no podemos distinguir entre minusculas o mayusculas, 
+si queremos ahorrarnos el preguntar por minusculas en el if, podriamos hacer lo siguiente (esto es un pseudocodigo): 
+
+copySentence = sentence.toUpperCase();
+while (i < sentence.length)
+    if(copySentence.code(if) == (mayuscula,guion medio, espacio)){
+        result[j] = sentence[i];
+        j++;
+    }
+    i++;
+}
+
+Lo que haria seria guardar en una nueva variable el texto en mayusculas, luego utilizar esta variable para obtener el codigo en la posicion i y ver si es una mayuscula ,guion o espacio 
+y por ultimo guardar en result lo que hay en sentence[i] asi no pierdo el formato con el que viene dado el texto.
+
+2) En el if encontraremos otro error ya que en este nunca se pregunta si es minuscula o guion bajo, por lo que no estariamos cumpliendo con la consigna. La solucion para esto es simplemente agregar
+la comparacion de minusculas y guiones bajo.
+
+3) Tenemos otro error en la asignacion donde deberiamos guardar el resultado, estamos pisando el valor de nuestra variable sentence con lo que hay en result, y en result no hay nada. Esta asignacion
+se deberia realizar al reves result[j] = sentence[i]
+
+4) Por ultimo al momento de retornar nuestro result, nunca comprobamos que el texto que estamos evaluando no tenga caracteres permitidos por lo que nunca vamos a retornar un Error como nos pide la consigna.
+
+Podra encontrar el codigo que se propone en la evaluacion con comentarios y tambien podra encontrar el codigo reescrito en el siguiente link: github.com/Coria97/Evaluacion-Tecnina-septiembre-2022
+
