@@ -11,8 +11,7 @@ function FormatString (sentence) {
             //convertimos todo a mayusculas y no hace falta comparar por minuscula, perdemos el formato como mencione anteriormente.
             (sentence.charCodeAt(i) >= 65 && sentence.charCodeAt(i) <= 90) || 
             (sentence.charCodeAt(i) >= 48 && sentence.charCodeAt(i) <= 57) || 
-            (sentence.charCodeAt(i) == 32) || 
-            (sentence.charCodeAt(i) == 45)  
+            (sentence.charCodeAt(i) == 32) || (sentence.charCodeAt(i) == 45)  
         ) {
             sentence[j] = result[i]; // Esta asignacion lo que hace es escribir un valor indefinido ya que a result nunca se le asigno un valor. Ademas que esta deberia ser al reves result[j] = sentence[i]
             j += 1;
